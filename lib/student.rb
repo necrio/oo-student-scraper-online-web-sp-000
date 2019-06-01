@@ -10,7 +10,7 @@ class Student
     self.send("location=", student_hash[:location])
     # same as bove, but with location
     self.send("profile_url=", student_hash[:profile_url])
-    
+
     @@all << self
   end
 
