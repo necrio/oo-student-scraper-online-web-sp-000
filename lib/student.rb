@@ -5,6 +5,12 @@ class Student
   @@all = []
 
   def initialize(student_hash)
+    self.send("name=", student_hash[:name])
+    # @name = student hash of [:name]
+    self.send("location=", student_hash[:location])
+    # same as bove, but with location
+    self.send("profile_url=", student_hash[:profile_url])
+    
     @@all << self
   end
 
